@@ -1,0 +1,63 @@
+/*!
+ * Main content
+ */
+
+.main {
+  
+  & .tab {
+    background: $grey;
+  }
+
+  & .carousel {
+
+    .carousel-indicators li {
+      width: 80px;
+      height: 5px;
+    }
+
+    .carousel-indicators .active {
+      background-color: $green;
+    }
+
+    & button {
+      -moz-border-radius: 28px;
+      -webkit-border-radius: 28px;
+      border-radius: 28px;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      background-color: #006167;
+      -moz-box-shadow: 4px 3px 13px rgba(0,0,0,.3);
+      -webkit-box-shadow: 4px 3px 13px rgba(0,0,0,.3);
+      box-shadow: 4px 3px 13px rgba(0,0,0,.3);
+      text-transform: uppercase;
+      padding: 15px 30px;
+    }
+
+    & .carousel-caption {
+      bottom: 20%;
+    }
+
+    & h1 {
+      color: $white;
+      font-size: 30px;
+      font-weight: bold;
+      text-shadow: 4px 3px 5px rgba(0,0,0,.31);
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+  }
+  
+  & hr {
+    height: 5px;
+    background: $grey-dark;
+  }
+
+  & .navbar {
+    font-weight: 600;
+
+    & .navbar-nav .active a {
+      color: $green;
+    }
+  }
+}

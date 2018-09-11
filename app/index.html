@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="author" content="XWork"/>
+
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="text/html"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+
+    <meta name="msapplication-TileImage" content="images/favicon.png">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="152x152"/>
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png"/>
+    <link rel="apple-touch-icon" href="images/favicon.png" sizes="152x152">
+
+    <title>Site Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"/>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/css3-mediaqueries.min.js"></script>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('main');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header fixed-top- d-flex flex-column">
+        <div class="container px-0 order-2 order-lg-1">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light">
+                <a class="navbar-brand d-lg-none" href="#">Меню</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                        aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Новости</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Оплата и доставка
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                                <a class="dropdown-item" href="#">Оплата</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Доставка</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal"
+                               data-target="#exampleModalCenter"><img src="images/user.png" alt=""> Вход/Регистрация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="basket"><img src="images/cart.png"
+                                                                                   alt=""><span>2</span></span><span
+                                    class="d-lg-none"> Корзина</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container my-2 order-1 order-lg-2">
+            <div class="row d-flex flex-column flex-lg-row align-content-center align-items-center">
+                <div class="logo col-4 text-center py-1">
+                    <a href=""><img src="images/logo.png" class="img-fluid" alt=""></a>
+                </div>
+                <div class="logo col-5 text-center py-1">
+                    <form action="">
+                        <div class="input-group stylish-input-group">
+                            <input type="text" class="form-control" placeholder="Поиск в магазине">
+                            <span class="input-group-addon">
+                            <button type="submit">
+                                <img src="images/search.png" alt="">
+                            </button>
+                        </span>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="logo col-3 text-center py-1">
+                    <a href="tel:+380633101171" class="d-inline-flex align-content-center align-items-center">
+                        <img src="images/phone.png" alt="">
+                        <div class="text-uppercase d-inline-flex align-items-center flex-column">+38 (063) 310-11-71<br><sma             </a>
+                </div>
+            </div>
+        </div>
+        <div class="container px-0 order-3 order-lg-3">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light">
+                <a class="navbar-brand d-lg-none" href="#">Каталог</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#catalogue"
+                        aria-controls="catalogue" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="catalogue">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Видеонаблюдение</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Сигнализация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Домофоны</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контроль доступа</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Сетевое оборудование</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Электропитание</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link text-uppercase" href="#">Распродажа</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div id="carouselExampleIndicators" class="carousel slide d-none d-md-block" data-ride="carousel">
+            <ol class="carousel-indicators d-none d-lg-inline-flex">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/slider-01.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-uppercase">Получите 100 % контроль и безопасность своего дома и бизнеса всего за
+                            1 день</h1>
+                        <button class="btn btn-info">Подробней</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slider-01.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-uppercase">Получите 100 % контроль и безопасность своего дома и бизнеса всего за
+                            1 день</h1>
+                        <button class="btn btn-info">Подробней</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slider-01.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-uppercase">Получите 100 % контроль и безопасность своего дома и бизнеса всего за
+                            1 день</h1>
+                        <button class="btn btn-info">Подробней</button>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="container-fluid tab">
+            <div class="row">
+                <div class="container">
+                    <ul class="nav nav-pills nav-justified d-flex flex-column flex-md-row align-content-center align-items-center" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="tab-content mt-3 mb-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est eveniet nulla odit placeat quaerat quam recusandae rerum sapiente voluptate. Corporis doloribus ex ipsa nulla perspiciatis quam quo sequi sit, veniam!
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dignissimos ex harum illum magni minus modi nesciunt officia quasi. Maiores molestiae nisi obcaecati repellat, tenetur voluptate. A explicabo officia saepe?
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eum perferendis qui saepe voluptate! Atque autem ea enim eum, ipsa quas repellat rerum. Beatae culpa, cupiditate ea fugit magni tempora.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 px-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci est explicabo modi
+                    nobis officia quas repellendus voluptatibus? Culpa dolores explicabo impedit quo rerum. Delectus
+                    eius impedit nemo quisquam voluptates!
+                </div>
+            </div>
+        </div>
+        <div class="container px-0">
+            <hr class="mb-0 d-none d-lg-block">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light">
+
+                <div class="collapse navbar-collapse" id="catalogue">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Видеонаблюдение</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Сигнализация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Домофоны</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контроль доступа</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Сетевое оборудование</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Электропитание</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link text-uppercase" href="#">Распродажа</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid pt-3 pb-2 black">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4">
+                            <h5><i class="fa fa-map-marker"></i> офис:</h5>
+                            <p class="ml-4 mb-0"><span class="text-nowrap pr-2">03148, г. Киев,</span>
+                                <span class="text-nowrap">ул. Малиновского 46а/27</span></p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4">
+                            <h5><i class="fa fa-map-marker"></i> Склад:</h5>
+                            <p class="ml-4 mb-0"><span class="text-nowrap pr-2">улица Доватора,15,</span>
+                                <span class="text-nowrap">база «Агропромснаб»</span></p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4">
+                            <h5><i class="fa fa-phone"></i> Контакты:</h5>
+                            <p class="ml-4 mb-0"><span class="text-nowrap">+8 (050) 123-45-67</span>
+                                <span class="text-nowrap">+8 (800) 123-45-67</span></p>
+                            <p class="mb-0"><i class="fa fa-envelope-open"></i> <span class="text-nowrap ml-2">tech@slabotochka.ua</span>
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="col-12 px-3 mb-2">
+                            <h5>ОБОРУДОВАНИЕ ПРОИЗВОДИТЕЛЕЙ:</h5>
+                            <p><a href="">Polair</a>, <a href="">Марихолодмаш</a>, <a href="">Abat
+                                (Чувашторгтехника)</a>, <a href="">Север</a>, Polus, Hicold, Italfrost, Pozis,
+                                Frostor, Frascold, Danfoss, Rada,Торгмаш, Атеси, Онега, Новая Энергия, GRC, Hessen,
+                                Восход, Проммаш, HorecaIron, LAMEL, ТЕПЛОФ</p>
+                            <p>Вы можете получить с бесплатной доставкой до региональных складов. </p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 mb-1 item">
+                            <h5>Одесса</h5>
+                            <p><span class="text-nowrap">улица Промышленная д.11А,</span>
+                                <span class="text-nowrap">тел: +8 (048) 907-53-96</span></p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 mb-1 item">
+                            <h5>Херсон</h5>
+                            <p><span class="text-nowrap">улица Демуса, д. 13,</span>
+                                <span class="text-nowrap">тел: +8 (0552) 97-53-96</span></p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 mb-1 item">
+                            <h5>Днепр</h5>
+                            <p><span class="text-nowrap">Кисловодское шоссе, 30,</span>
+                                <span class="text-nowrap">тел: +8 (056) 907-53-96</span></p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 mb-1 item">
+                            <h5>Харьков</h5>
+                            <p><span class="text-nowrap">проезд Тайшетский, д. 10,</span>
+                                <span class="text-nowrap">тел: +8 (057) 907-53-96</span></p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 mb-1 item">
+                            <h5>Запорожье</h5>
+                            <p><span class="text-nowrap">переулок Нефтяной, д. 1,</span>
+                                <span class="text-nowrap">тел: +8 (061) 907-53-96</span></p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 mb-1 item">
+                            <h5>Львов</h5>
+                            <p><span class="text-nowrap">улица Луговая, д. 6,</span>
+                                <span class="text-nowrap">тел: +8 (032) 907-53-96</span></p>
+                        </div>
+                        <hr>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-8 mb-1">
+                            <h6>Принимаем к оплате: <img class="ml-2" src="images/visa.jpg" alt=""></h6>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-1">
+                            <h6>Поделиться в соцсетях:
+                                <a href="" class="ml-2"><i class="fa fa-google-plus-circle"></i></a>
+                                <a href="" class="ml-1"><i class="fa fa-twitter"></i></a>
+                                <a href="" class="ml-1"><i class="fa fa-facebook-official"></i></a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 px-5 text-center">
+                            <p>* Указан стандартный срок поставки при условии наличия товара на складе производителя.
+                                Точный срок с учетом загрузки транспортной компании, наличия на складах, вы можете
+                                узнать у своего менеджера. Интернет ресурс носит исключительно информационный характер и
+                                не является публичной офертой.</p>
+                            <p class="copyright">Все права защищены &copy; 2011-2018.<br>
+                                Разработка сайта <a href="https://xwork.site" target="_blank">xWork.site</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a id="back-to-top" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis ab veniam, repellat
+                    asperiores assumenda harum saepe delectus quisquam aliquam ex quaerat, porro deserunt, itaque
+                    recusandae accusantium quos? Molestiae, at.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.jcarousel.min.js"></script>
+<script src="js/jquery.matchHeight-min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/script.js"></script>
+<!-- endbuild -->
+
+</body>
+
+</html>
