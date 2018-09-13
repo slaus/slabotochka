@@ -27,9 +27,13 @@ $(function () {
             var carousel = $(this),
                 width = carousel.innerWidth();
 
-            if (width >= 991) {
+            if (width >= 960) {
+                width = width / 4;
+            } else if (width >= 720) {
+                width = width / 3;
+            } else if (width >= 540) {
                 width = width / 2;
-            } else if (width >= 767) {
+            } else if (width > 300) {
                 width = width;
             }
 

@@ -69,10 +69,12 @@ a, a:hover {
   cursor: pointer;
   display: none;
   z-index: 999;
+  transition: .3s;
 
   &:hover {
-    background: $green;
+    background: $green-dark;
     text-decoration: none;
+    transition: .3s;
   }
 }
 
@@ -119,8 +121,8 @@ a, a:hover {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-left: 15px;
+  padding-right: 15px;
   position: relative;
 }
 

@@ -10,6 +10,27 @@
     }
   }
 
+  & a {
+
+    & .call {
+      color: $black;
+      font-weight: 600;
+      
+      & small {
+        color: $green;
+        border-bottom: 1px dashed transparent;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      & small {
+        border-bottom: 1px dashed $green;
+      }
+    }
+  }
+
   & .stylish-input-group .input-group-addon{
     background: $grey;
   }
@@ -25,11 +46,32 @@
     background:transparent;
   }
 
-  & .navbar {
-    font-weight: 600;
-    
-    & .navbar-nav .active a {
+}
+
+.navbar {
+  font-weight: 600;
+}
+
+  .navbar-nav {
+
+    & .nav-item.active a.nav-link {
       color: $green;
+    }
+    & .nav-item a.nav-link {
+      color: $black;
+      font-weight: 600;
+      transition: .3s;
+
+      @media screen and (max-width: 1199px) {
+        font-size: 17px;
+        padding-right: .3rem;
+        padding-left: .3rem;
+      }
+
+      &:hover {
+        color: $green;
+        transition: .3s;
+      }
     }
 
     & .basket {
@@ -54,9 +96,9 @@
         -moz-background-clip: padding;
         -webkit-background-clip: padding-box;
         background-clip: padding-box;
-        background-color: rgba(255,255,255,.75);
+        background-color: rgba(255, 255, 255, .75);
 
       }
     }
   }
-}
+

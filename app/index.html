@@ -85,15 +85,14 @@
                             <a class="nav-link" href="#">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav d-none d-lg-inline-flex">
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="modal"
                                data-target="#exampleModalCenter"><img src="images/user.png" alt=""> Вход/Регистрация</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><span class="basket"><img src="images/cart.png"
-                                                                                   alt=""><span>2</span></span><span
-                                    class="d-lg-none"> Корзина</span></a>
+                                                                                   alt=""><span>2</span></span> Корзина</a>
                         </li>
                     </ul>
                 </div>
@@ -102,7 +101,7 @@
         <div class="container my-2 order-1 order-lg-2">
             <div class="row d-flex flex-column flex-lg-row align-content-center align-items-center">
                 <div class="logo col-4 text-center py-1">
-                    <a href=""><img src="images/logo.png" class="img-fluid" alt=""></a>
+                    <a href=""><img src="images/logo.png" class="img-fluid scale animate" alt=""></a>
                 </div>
                 <div class="logo col-5 text-center py-1">
                     <form action="">
@@ -118,9 +117,27 @@
                     </form>
                 </div>
                 <div class="logo col-3 text-center py-1">
-                    <a href="tel:+380633101171" class="d-inline-flex align-content-center align-items-center">
+
+                    <a href="tel:+380633101171"
+                       class="d-inline-flex align-content-center align-items-center scale animate">
                         <img src="images/phone.png" alt="">
-                        <div class="text-uppercase d-inline-flex align-items-center flex-column">+38 (063) 310-11-71<br><small>Позвонить</small></a>
+                        <div class="call text-uppercase d-inline-flex align-items-center flex-column">+38 (063)
+                            310-11-71<br>
+                            <small>Обратный звонок</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="logo col-3 text-center py-1">
+                    <ul class="navbar-nav d-lg-none d-inline-flex flex-row align-content-center align-items-center justify-content-center">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#" data-toggle="modal"
+                               data-target="#exampleModalCenter"><img src="images/user.png" alt=""> Вход/Регистрация</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#"><span class="basket"><img src="images/cart.png"
+                                                                                   alt=""><span>2</span></span> Корзина</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -207,15 +224,27 @@
         <div class="container-fluid tab">
             <div class="row">
                 <div class="container">
-                    <ul class="nav nav-pills nav-justified d-flex flex-column flex-md-row align-content-center align-items-center" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills nav-justified d-flex flex-column- flex-md-row align-content-center align-items-center"
+                        id="pills-tab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                            <a class="nav-link active" id="pills-hit-tab" data-toggle="pill" href="#pills-hit"
+                               role="tab" aria-controls="pills-hit" aria-selected="true"><span
+                                    class="bg-star_dark d-none d-lg-block"></span> Хиты</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                            <a class="nav-link" id="pills-new-tab" data-toggle="pill" href="#pills-new" role="tab"
+                               aria-controls="pills-new" aria-selected="false"><span
+                                    class="bg-lamp_dark d-none d-lg-block"></span> Новинки</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                            <a class="nav-link" id="pills-action-tab" data-toggle="pill" href="#pills-action" role="tab"
+                               aria-controls="pills-action" aria-selected="false"><span
+                                    class="bg-percent_dark d-none d-lg-block"></span> Акции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-sale-tab" data-toggle="pill" href="#pills-sale" role="tab"
+                               aria-controls="pills-sale" aria-selected="false"><span
+                                    class="bg-cool_dark d-none d-lg-block"></span> Распродажа</a>
                         </li>
                     </ul>
                 </div>
@@ -224,26 +253,468 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="container">
-                    <div class="tab-content mt-3 mb-5" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est eveniet nulla odit placeat quaerat quam recusandae rerum sapiente voluptate. Corporis doloribus ex ipsa nulla perspiciatis quam quo sequi sit, veniam!
+                    <div class="tab-content mt-3 mb-4" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-hit" role="tabpanel"
+                             aria-labelledby="pills-hit-tab">
+                            <div class="row">
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-01.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="old mx-2">900 грн.</span><span class="mx-2">820 грн.</span>
+                                        </div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-01.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">820 грн.</span></div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-01.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="old mx-2">900 грн.</span><span class="mx-2">820 грн.</span>
+                                        </div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-01.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">820 грн.</span></div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dignissimos ex harum illum magni minus modi nesciunt officia quasi. Maiores molestiae nisi obcaecati repellat, tenetur voluptate. A explicabo officia saepe?
+                        <div class="tab-pane fade" id="pills-new" role="tabpanel" aria-labelledby="pills-new-tab">
+                            <div class="row">
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-07.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="old mx-2">900 грн.</span><span class="mx-2">820 грн.</span>
+                                        </div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-07.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">820 грн.</span></div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-07.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="old mx-2">900 грн.</span><span class="mx-2">820 грн.</span>
+                                        </div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-07.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">820 грн.</span></div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eum perferendis qui saepe voluptate! Atque autem ea enim eum, ipsa quas repellat rerum. Beatae culpa, cupiditate ea fugit magni tempora.
+                        <div class="tab-pane fade" id="pills-action" role="tabpanel" aria-labelledby="pills-action-tab">
+                            <div class="row">
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-08.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="old mx-2">900 грн.</span><span class="mx-2">820 грн.</span>
+                                        </div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-08.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">820 грн.</span></div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-08.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="old mx-2">900 грн.</span><span class="mx-2">820 грн.</span>
+                                        </div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-08.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">820 грн.</span></div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-sale" role="tabpanel" aria-labelledby="pills-sale-tab">
+                            <div class="row">
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-09.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="old mx-2">900 грн.</span><span class="mx-2">820 грн.</span>
+                                        </div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-09.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">820 грн.</span></div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-09.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="old mx-2">900 грн.</span><span class="mx-2">820 грн.</span>
+                                        </div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div class="mx-0 animate item product">
+                                        <div class="img"><img src="images/photo-09.jpg" class="img-fluid" alt=""></div>
+                                        <h4 class="text-center mt-2 mb-0">IP NVR видеорегистратор</h4>
+                                        <h5 class="text-center stock">в наличии</h5>
+                                        <h2 class="text-center mb-1">Dahua Technology DH-NVR1A04HS</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">820 грн.</span></div>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <input class="mx-1 qty" type="text" value="1">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid ready py-4">
+            <div class="row">
+                <div class="container">
+                    <h2 class="title text-center text-uppercase">Готовые решения</h2>
+                    <div class="jcarousel-wrapper py-4">
+                        <div class="jcarousel">
+                            <ul>
+                                <li>
+                                    <div class="mx-0 animate item slider">
+                                        <div class="img"><img src="images/icon-01.png" alt=""></div>
+                                        <h2 class="text-center mb-1">видеонаблюдение в кафе</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">от 12000 грн.</span>
+                                        </div>
+                                        <p class="text-center garantee">установка за 1 день</p>
+                                        <p class="text-center garantee">гарантия 1 год</p>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">Заказать</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mx-0 animate item slider">
+                                        <div class="img"><img src="images/icon-02.png" alt=""></div>
+                                        <h2 class="text-center mb-1">видеонаблюдение в салон красоты</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">от 12000 грн.</span>
+                                        </div>
+                                        <p class="text-center garantee">установка за 1 день</p>
+                                        <p class="text-center garantee">гарантия 1 год</p>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">Заказать</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mx-0 animate item slider">
+                                        <div class="img"><img src="images/icon-03.png" alt=""></div>
+                                        <h2 class="text-center mb-1">видеонаблюдение в магазин</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">от 12000 грн.</span>
+                                        </div>
+                                        <p class="text-center garantee">установка за 1 день</p>
+                                        <p class="text-center garantee">гарантия 1 год</p>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">Заказать</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mx-0 animate item slider">
+                                        <div class="img"><img src="images/icon-04.png" alt=""></div>
+                                        <h2 class="text-center mb-1">видеонаблюдение в загородный дом</h2>
+                                        <div class="price text-center d-flex justify-content-center align-content-center align-items-center mb-1">
+                                            <span class="mx-2">от 12000 грн.</span>
+                                        </div>
+                                        <p class="text-center garantee">установка за 1 день</p>
+                                        <p class="text-center garantee">гарантия 1 год</p>
+                                        <div class="shopping d-flex text-center justify-content-center">
+                                            <a href="" class="mx-1 btn btn-info btn-shop">Заказать</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                        <!--<p class="jcarousel-pagination mb-3"></p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid calc py-4 mb-4">
+            <div class="row">
+                <div class="container mb-1">
+                    <div class="row d-flex align-items-center flex-column flex-lg-row-reverse">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center py-4">
+                            <div class="row d-flex align-items-center align-content-center">
+                                <div class="col-12">
+                                    <h3 class="text-uppercase text-center mb-5">расчет стоимости вашего объекта всего за
+                                        5 минут</h3>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 mb-3">
+                                    <select class="form-control" id="in">
+                                        <option value="0">Число внутренних камер</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 mb-3">
+                                    <select class="form-control" id="out">
+                                        <option value="0">Число наружных камер</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 mb-3">
+                                    <select class="form-control" id="volume">
+                                        <option value="0">Обьем архива</option>
+                                        <option value="1">100 Gb</option>
+                                        <option value="2">500 Gb</option>
+                                        <option value="3">1 Tb</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 mb-3">
+                                    <select class="form-control" id="channel">
+                                        <option value="0">Число каналов видеорегистратора</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 mb-3">
+                                    <select class="form-control" id="sound">
+                                        <option value="0">Наличие звука</option>
+                                        <option value="1">Да</option>
+                                        <option value="2">Нет</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 mb-3">
+                                    <select class="form-control" id="internet">
+                                        <option value="0">Доступ в интернет</option>
+                                        <option value="1">Да</option>
+                                        <option value="2">Нет</option>
+                                    </select>
+                                </div>
+                                <div class="order d-flex text-center justify-content-center mt-4">
+                                    <a href="" class="mx-1 btn btn-info btn-order">получить расчет</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-center my-2 d-none d-sm-block">
+                            <img src="images/camera.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
+            <h2 class="title text-center text-uppercase">Новости</h2>
             <div class="row">
-                <div class="col-12 px-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci est explicabo modi
-                    nobis officia quas repellendus voluptatibus? Culpa dolores explicabo impedit quo rerum. Delectus
-                    eius impedit nemo quisquam voluptates!
+                <div class="news col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 mb-5">
+                    <h3 class="news-title mb-3">Какую IP камеру выбрать для видеонаблюдения?</h3>
+                    <img class="news-img" src="images/photo-02.jpg" alt="">
+                    <p>
+                        Перед тем, как решить какую IP камеру выбрать для видеонаблюдения, необходимо ответить на
+                        несколько вопросов. Прежде всего, это целевое назначение и технические характеристики, которыми
+                        должно обладать устройство для того, чтобы справляться поставленными задачами. Определиться с
+                        тем, какую камеру выбрать для...
+                    </p>
+                    <div class="data">02.09.2018</div>
+                    <div class="more text-uppercase"><a href="">Читать</a></div>
+                </div>
+                <div class="articles col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 mb-3">
+                    <div class="articles-block mb-3">
+                        <h3 class="articles-title mr-2">КУПОЛЬНЫЕ MINI DOME КАМЕРЫ ОТ MILESIGHT</h3>
+                        <div class="articles-data">03.07.2018</div>
+                    </div>
+                    <div class="articles-block mb-3">
+                        <h3 class="articles-title mr-2">КАКИЕ КАМЕРЫ ВИДЕОНАБЛЮДЕНИЯ ЛУЧШЕ?</h3>
+                        <div class="articles-data">08.09.2018</div>
+                    </div>
+                    <div class="articles-block mb-3">
+                        <h3 class="articles-title mr-2">Какой монитор лучше для видеонаблюдения?</h3>
+                        <div class="articles-data">17.12.2018</div>
+                    </div>
+                    <div class="articles-block mb-3">
+                        <h3 class="articles-title mr-2">В каком формате пишут камеры видеонаблюдения.</h3>
+                        <div class="articles-data">12.10.2017</div>
+                    </div>
+                    <div class="articles-block mb-3">
+                        <h3 class="articles-title mr-2">КАК РАБОТАЕТ ПЕРЕДОВАЯ ТЕХНОЛОГИЯ РАСПОЗНАВАНИЯ ЛИЦ ОТ
+                            HIKVISION</h3>
+                        <div class="articles-data">05.04.2018</div>
+                    </div>
+                    <div class="more text-uppercase"><a href="">еще статьи</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="mx-0 animate item catalogue scale">
+                        <div class="img"><img src="images/photo-03.jpg" class="img-fluid" alt=""></div>
+                        <h2 class="text-center mb-1">видеонаблюдение</h2>
+                    </div>
+                </div>
+                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="mx-0 animate item catalogue scale">
+                        <div class="img"><img src="images/photo-04.jpg" class="img-fluid" alt=""></div>
+                        <h2 class="text-center mb-1">сигнализация</h2>
+                    </div>
+                </div>
+                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="mx-0 animate item catalogue scale">
+                        <div class="img"><img src="images/photo-05.jpg" class="img-fluid" alt=""></div>
+                        <h2 class="text-center mb-1">домофоны</h2>
+                    </div>
+                </div>
+                <div class="mb-2 col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="mx-0 animate item catalogue scale">
+                        <div class="img"><img src="images/photo-06.jpg" class="img-fluid" alt=""></div>
+                        <h2 class="text-center mb-1">сетевое оборудование</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -384,19 +855,50 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Вход/Регистрация</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis ab veniam, repellat
-                    asperiores assumenda harum saepe delectus quisquam aliquam ex quaerat, porro deserunt, itaque
-                    recusandae accusantium quos? Molestiae, at.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="grey-light-color auth">
+                <div class="row">
+                    <div class="col-xs-12 text-center pt-2 pb-3 img">
+                        <img src="images/logo.png" class="logo" alt="">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 login-box">
+                        <form action="index.php" method="post" id="userform" role="form">
+                            <div class="row">
+                                <div class="input-group mb-2">
+                        <span class="input-group-addon">
+                          <span class="fa fa-user"></span>
+                        </span>
+                                    <input type="text" class="form-control" name="user_login" id="user_login"
+                                           placeholder="Логин" required="">
+                                </div>
+                                <div class="input-group mb-3">
+                        <span class="input-group-addon">
+                          <span class="fa fa-lock"></span>
+                        </span>
+                                    <input type="password" class="form-control" name="user_pw" id="user_pw"
+                                           placeholder="Пароль" required="">
+                                </div>
+                                <div class="text-center forgot mb-0">
+                                    <a href="index.php?logging=yes">Забыли свой пароль?</a>
+                                </div>
+                                <div class="text-center register mb-3">У вас нет аккаунта?
+                                    <a href="index.php?register=yes">Регистрация</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 text-center mb-3">
+                                    <button type="submit" class="btn btn-auth animate">
+                                        <i class="fa fa-key"></i> Войти
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
